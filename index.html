@@ -3,31 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" type="icon" href="img/logoKucing.png">
+    <meta name="description" content="Portofolio Natanael Sitompul - Mahasiswa Teknik Informatika">
+    <title>Home | Natanael Sitompul</title>
+    <link rel="icon" type="image/x-icon" href="img/logoKucing.png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="index">
     <header>
-        <h1 class="spotLight">Halo, Saya Natanael Sitompul</h1>
-        <nav>
-            <a class="homeC" href="index.html">Home</a>
-            <a class="galleryC" href="Gallery.html">Gallery</a>
-            <a class="blogC" href="Blog.html">Blog</a>
-            <a class="contactC" href="Contact.html">Contact</a>
-        </nav>
+        <div class="header-container">
+            <div class="logo">NS</div>
+            <button id="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
+    
     <main>
-        <section class="aboutMe">
-            <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang Mahasiswa Fakultas Teknik, Prodi Teknik Informatika.</p>
+        <section class="about-me">
+            <div class="container">
+                <h1 class="spotlight">Halo, Saya Natanael Sitompul</h1>
+                <p class="text">Mahasiswa Fakultas Teknik, Program Studi Teknik Informatika.</p>
+                <div class="profile-summary">
+                    <p>Saya memiliki minat di bidang cyber security. Saat ini sedang menempuh pendidikan di Universitas Sam Ratulangi dan aktif mengembangkan keterampilan pemrograman.</p>
+                    <a href="contact.html" class="cta-button">Hubungi Saya</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div>
-            <p>&copy; 2025 Natanael Sitompul</p>
+        <div class="copyright">
+            <p>&copy; <span id="year">2025</span> Natanael Sitompul</p>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
