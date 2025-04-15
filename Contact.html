@@ -1,65 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="icon" type="icon" href="img/logoKucing.png">
+    <meta name="description" content="Halaman kontak Natanael Sitompul">
+    <title>Contact | Natanael Sitompul</title>
+    <link rel="icon" type="image/x-icon" href="img/logoKucing.png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Selamat Datang di Halaman Contact Saya</h1>
-    <a class="homeC" href="index.html">Home</a>
-    <a class="galleryC" href="Gallery.html">Gallery</a>
-    <a class="blogC" href="Blog.html">Blog</a>
-    <a class="contactC" href="Contact.html">Contact</a>
+<body class="contact">
+    <header>
+        <div class="header-container">
+            <div class="logo">NS</div>
+            <button id="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
-        <section id="contact">
-            <h2>Hubungi Saya</h2>
-            <p>Jika Anda memiliki pertanyaan atau ingin berdiskusi lebih lanjut, jangan ragu untuk menghubungi Saya melalui formulir di bawah ini.</p>
-    
-            <!-- Formulir Kontak -->
-            <form action="https://formspree.io/f/mjkyvpok?" method="POST">
-                <label for="name">Nama (required)</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email (required)</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="message">Pesan</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-    
-                <button type="submit">Send message!</button>
-            </form>
-    
-            <!-- Alamat dan Kontak -->
-            <div class="contactInfo">
-                <h3>Informasi Kontak</h3>
-                <div class="address">
-                    <p><strong>Alamat:</strong> Jl. Ranowangun VI, Kota Manado 95161 - Indonesia</p>
-                </div>
-                <div class="email">
-                    <p><strong>Email:</strong> <a href="mailto:16natanaelsitompul@gmail.com">16natanaelsitompul@gmail.com</a></p>
-                </div>
-                <div class="phone">
-                    <p><strong>Telepon:</strong> +62-821-9299-3661</p>
-                </div>
-            </div>
-    
-            <!-- Media Sosial -->
-            <div class="social-media">
-                <h3>Ikuti Saya di Media Sosial</h3>
-                <p>
-                    <a class="ig" href="https://www.instagram.com/neanteaa/" target="_blank">Instagram</a>
-                    <a class="fb" href="https://www.facebook.com/siNatanael/" target="_blank">Facebook</a>
-                </p>
-            </div>
+        <section class="hero">
+            <h1 class="spotlight">Hubungi Saya</h1>
+            <p class="subtitle">Silakan isi formulir atau gunakan kontak langsung</p>
         </section>
+
+        <div class="contact-container">
+            <section class="contact-form">
+                <h2>Form Kontak</h2>
+                <form action="https://formspree.io/f/mjkyvpok" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nama <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Pesan <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Kirim Pesan</button>
+                </form>
+            </section>
+
+            <aside class="contact-info">
+                <h2>Kontak Langsung</h2>
+                <div class="info-item">
+                    <h3>Alamat</h3>
+                    <address>
+                        Jl. Ranowangun VI<br>
+                        Kota Manado 95161
+                    </address>
+                </div>
+
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:16natanaelsitompul@gmail.com">16natanaelsitompul@gmail.com</a></p>
+                </div>
+
+                <div class="info-item">
+                    <h3>Telepon</h3>
+                    <p><a href="tel:+6282192993661">+62 821-9299-3661</a></p>
+                </div>
+
+                <div class="social-media">
+                    <h3>Media Sosial</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/neanteaa/" target="_blank" rel="noopener noreferrer" class="social-link ig">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/siNatanael/" target="_blank" rel="noopener noreferrer" class="social-link fb">Facebook</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </main>
 
     <footer>
-        <div>
-            <p>&copy; 2025 Natanael Sitompul</p>
+        <div class="copyright">
+            <p>&copy; <span id="year">2025</span> Natanael Sitompul</p>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
